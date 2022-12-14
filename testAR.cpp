@@ -3,11 +3,11 @@
 using namespace std;
 
 
-int mulsum(vector<int> vt1,vector<int> vt2){
+int mulsum(vector<vector<int>> vt1,vector<vector<int>> vt2){
+	int c2=vt2[0].size();
 	int r1=vt1[0].size();
 	int c1r2=vt2.size();
-	int c2=vt2[0].size;
-	vector<vector<int>> res=new int[r1][c2];
+	vector<vector<int>> res;
 
 	int sum=0;
 	for(int i=0;i<r1;i++){
@@ -32,11 +32,11 @@ int mulsum(vector<int> vt1,vector<int> vt2){
 vector<vector<int>> transpose(vector<vector<int>> mat){
 	int c=mat[0].size();
 	int r=mat.size();
-	vector<vector<int>> temp=new int[c][r];
+	vector<vector<int>> temp=mat;
 
 	for(int i=0;i<c;i++){
 		for(int j=0;j<r;j++){
-			vector[i][j]=mat[j][i];
+			temp[i][j]=mat[j][i];
 		}
 	}
 	return temp;
@@ -46,9 +46,9 @@ int main() {
 	// freopen("input.txt","r",stdin);
 	// freopen("output.txt","w",stdout);
 
-	int t;
-	cin>>t;
-	for(int i=0)
+	// int t;
+	// cin>>t;
+	// for(int i=0)
 	
 	
 	return 0;
